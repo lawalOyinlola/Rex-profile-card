@@ -4,34 +4,34 @@ import "./styles.css";
 
 const skills = [
   {
-    skill: 'Nipping',
-    level: 'advanced',
-    color: '#2662EA',
+    skill: "Nipping",
+    level: "advanced",
+    color: "#2662EA",
   },
   {
-    skill: 'Eating',
-    level: 'advanced',
-    color: '#EFD81D',
+    skill: "Eating",
+    level: "advanced",
+    color: "#EFD81D",
   },
   {
-    skill: 'Playing',
-    level: 'advanced',
-    color: '#C3DCAF',
+    skill: "Playing",
+    level: "advanced",
+    color: "#C3DCAF",
   },
   {
-    skill: 'Attention Seeking',
-    level: 'intermediate',
-    color: '#E84F33',
+    skill: "Attention Seeking",
+    level: "intermediate",
+    color: "#E84F33",
   },
   {
-    skill: 'Laying Down',
-    level: 'advanced',
-    color: '#60DAFB',
+    skill: "Laying Down",
+    level: "advanced",
+    color: "#60DAFB",
   },
   {
-    skill: 'Cuddling',
-    level: 'beginner',
-    color: '#FF3B00',
+    skill: "Cuddling",
+    level: "beginner",
+    color: "#FF3B00",
   },
 ];
 
@@ -60,7 +60,7 @@ function Intro() {
       <p>
         Home bred golden brown dog of the chow chow breed also called Lion puffy
         breed. When not laying down lazy, I like to jump around, chew on random
-        stuffs, eat, seek attention from my owner and receive treats.
+        stuffs, eat, seek attention from my parent and receive treats.
       </p>
     </div>
   );
@@ -76,14 +76,14 @@ function SkillSet() {
   );
 }
 
-function Skill({skill,level, color}) {
+function Skill({ skill, level, color }) {
   return (
     <div className="skill" style={{ backgroundColor: color }}>
       <span>{skill}</span>
       <span>
-        {level === 'beginner' && '👶'}
-        {level === 'intermediate' && '👍'}
-        {level === 'advanced' && '💪'}
+        {level === "beginner" && "👶"}
+        {level === "intermediate" && "👍"}
+        {level === "advanced" && "💪"}
       </span>
     </div>
   );
